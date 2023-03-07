@@ -350,7 +350,7 @@
 }
 
 #dbmax-dashboard .table {
-  color: #FFF;
+  color: #3743f3;
 }
 
 #dbmax-dashboard .table th {
@@ -362,10 +362,12 @@
 }
 
 .table-dbmax-title {
-  color: #FFF;
+  color: #3743f3;
   font-weight: bold;
-  transition: .5s;
+  transition: .5s; 
+  text-decoration: none; 
 }
+
 
 .table-dbmax-title:hover {
   color: #3743f3;
