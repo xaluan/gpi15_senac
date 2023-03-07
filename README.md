@@ -14,3 +14,4 @@ git clone https://github.com/DellSilva/gpi15_senac.git
 --- MEMBROS DO GRUPO DO PROJETO INTEGRADOR 15 ---
 
 -> José Adelmo Silva Júnior
+-> João Vitor da Silva Soares
