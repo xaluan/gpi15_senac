@@ -16,3 +16,5 @@ git clone https://github.com/DellSilva/gpi15_senac.git
 -> José Adelmo Silva Júnior
 
 -> João Vitor da Silva Soares
+
+-> Lucas Fernando Baptista
