@@ -3,9 +3,9 @@ require_once("templates/header.php");
 
 ?>
 <div id="main-container" class="container-fluid">
-  <div class="dbmax-container">
-  <div class="container">
-    <div class="panel pricing-table">
+  <div class="dbmax-container col-12">
+  
+    <div class="dbmax-container col-12 planos">
       
       <div class="pricing-plan">
         <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
@@ -16,7 +16,7 @@ require_once("templates/header.php");
           <li class="pricing-features-item">acesso ilimitado ao dados.</li>
         </ul>
         <span class="pricing-price">1 Mês gratis</span>
-        <a href="#/" class="pricing-button">inscrever-se</a>
+        <a href="<?= $BASE_URL ?>auth.php" class="pricing-button">inscrever-se</a>
       </div>
       
       <div class="pricing-plan">
@@ -31,7 +31,7 @@ require_once("templates/header.php");
           <li class="pricing-features-item">Acesso ilimitado aos dados</li>
         </ul>
         <span class="pricing-price">$50,00 Mensal</span>
-        <a href="#/" class="pricing-button is-featured">inscreva-se</a>
+        <a href="<?= $BASE_URL ?>auth.php" class="pricing-button is-featured">inscreva-se</a>
       </div>
       
       <div class="pricing-plan">
@@ -43,9 +43,9 @@ require_once("templates/header.php");
           <li class="pricing-features-item">acesso ilimitado ao dados</li>
         </ul>
         <span class="pricing-price">R$80,00 Mensal</span>
-        <a href="#/" class="pricing-button">inscreva-se</a>
+        <a href="<?= $BASE_URL ?>auth.php" class="pricing-button">inscreva-se</a>
       </div>      
-    </div>
+    
   </div>
     
   </div>
