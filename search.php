@@ -34,7 +34,7 @@ $candidatos = $candidatoDao->findByName($pesquisa);
           <?php foreach($candidatos as $candidato): ?>
           <tr>
             <td scope="row"><?= $candidato->id ?></td>
-            <td><a href="<?= $BASE_URL ?>Candidato.php?id=<?= $candidato->id ?>" class="table-dbmax-title"><?= $candidato->nome ?></a></td>
+            <td><a href="<?= $BASE_URL ?>editcandidato.php?id=<?= $candidato->id ?>" class="table-dbmax-title"><?= $candidato->nome ?></a></td>
             <td><i></i> <?= $candidato->email ?></td>
             <td><i></i> <?= $candidato->curso ?></td>
             <td><i></i> <?= $candidato->experiencia ?></td>           

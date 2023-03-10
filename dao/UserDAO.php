@@ -104,7 +104,7 @@
 
       if($redirect) {
        
-        $this->message->setMessage("Seja bem-vindo!", "success", "editprofile.php");
+        $this->message->setMessage("Seja bem-vindo!", "success", "newcandidato.php");
 
       }
 

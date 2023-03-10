@@ -59,6 +59,27 @@ class CandidatoDAO implements CandidatoDAOInterface
   }
   public function findById($id)
   {
+
+    $candidatos = [];
+
+    $stmt = $this->conn->prepare("SELECT * FROM candidatos 
+                                  WHERE id = :id");
+
+    $stmt->bindParam(":id", $id);
+
+    $stmt->execute();
+
+    if ($stmt->rowCount() > 0) {
+
+      $candidatosData = $stmt->fetch();
+
+      $candidatos = $this->buildCandidato($candidatosData);
+
+      return $candidatos;
+    } else {
+
+      return false;
+    }
   }
   public function findByName($nome)
   {
@@ -108,9 +129,44 @@ class CandidatoDAO implements CandidatoDAOInterface
 
     $this->message->setMessage("Curriculo adicionado com sucesso!", "success", "index.php");
   }
+
   public function update(Candidato $candidato)
   {
+
+    $stmt = $this->conn->prepare("UPDATE candidatos SET 
+      nome = :nome,
+      cpf = :cpf,
+      telefone = :telefone,
+      endereco = :endereco,
+      numero = :numero,
+      CEP = :CEP,
+      estado = :estado,
+      cidade = :cidade,
+      email = :email,
+      curso = :curso,
+      experiencia = :experiencia
+      WHERE id = :id
+    ");
+
+    $stmt->bindParam(":nome", $candidato->nome);
+    $stmt->bindParam(":cpf", $candidato->cpf);
+    $stmt->bindParam(":telefone", $candidato->telefone);
+    $stmt->bindParam(":endereco", $candidato->endereco);
+    $stmt->bindParam(":numero", $candidato->numero);
+    $stmt->bindParam(":CEP", $candidato->CEP);
+    $stmt->bindParam(":estado", $candidato->estado);
+    $stmt->bindParam(":cidade", $candidato->cidade);
+    $stmt->bindParam(":email", $candidato->email);
+    $stmt->bindParam(":curso", $candidato->curso);
+    $stmt->bindParam(":experiencia", $candidato->experiencia);
+    $stmt->bindParam(":id", $candidato->id);
+
+
+    $stmt->execute();
+
+    $this->message->setMessage("Curriculo editado com sucesso!", "success", "index.php");
   }
+
   public function destroy($id)
   {
   }
