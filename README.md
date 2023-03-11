@@ -18,3 +18,5 @@ git clone https://github.com/DellSilva/gpi15_senac.git
 -> João Vitor da Silva Soares
 
 -> Lucas Fernando Baptista
+
+-> Bruno De Jesus Santana Sousa
