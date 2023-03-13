@@ -20,3 +20,5 @@ git clone https://github.com/DellSilva/gpi15_senac.git
 -> Lucas Fernando Baptista
 
 -> Bruno De Jesus Santana Sousa
+
+-> Fernando Guimarães Crescenti
