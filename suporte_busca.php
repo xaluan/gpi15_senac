@@ -13,8 +13,8 @@ $userData = $userDao->verifyToken(true);
 
 <div id="main-container" class="container-fluid">        
     <div class="form-group">
-    <form action="<?= $BASE_URL ?>search.php" method="GET" id="search-form" class="form-inline my-2 my-lg-0" style="width: 80%;" >
-        <input type="text" name="search_suporte" id="search_suporte" class="form-control mr-sm-2" type="search" placeholder="Buscar Cadastros de Curriculos" aria-label="search_suporte">
+    <form action="<?= $BASE_URL ?>search_result.php" method="GET" id="search-form" class="form-inline my-2 my-lg-0" style="width: 80%;" >
+        <input type="text" name="search" id="search" class="form-control mr-sm-2" type="search" placeholder="Buscar os registros de suporte" aria-label="Search">
         <button class="btn my-2 my-sm-0" type="submit">
           <i class="fas fa-search"></i>
         </button>

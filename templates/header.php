@@ -65,6 +65,9 @@ $userData = $userDao->verifyToken(false);
               <a href="<?= $BASE_URL ?>suporte.php" class="nav-link">Contato</a>
             </li>
             <li class="nav-item">
+              <a href="<?= $BASE_URL ?>suporte_busca.php" class="nav-link">Suporte</a>
+            </li>
+            <li class="nav-item">
               <a href="<?= $BASE_URL ?>logout.php" class="nav-link">Sair</a>
             </li>
           <?php else : ?>

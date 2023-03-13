@@ -34,12 +34,47 @@ class SuporteDAO implements SuporteDAOInterface {
 
     $suportes = [];
 
-    $stmt = $this->conn->prepare("SELECT * FROM suportes");
+    $stmt = $this->conn->prepare("SELECT * FROM suportes ORDER BY id DESC");
 
     $stmt->execute();
+
+    if ($stmt->rowCount() > 0) {
+
+      $suportesArray = $stmt->fetchAll();
+
+      foreach ($suportesArray as $suporte) {
+        $suportes[] = $this->buildSuporte($suporte);
+      }
+    }
+
     
     return $suportes;
 
+  }
+
+  public function findById($id)
+  {
+
+    $suportes = [];
+
+    $stmt = $this->conn->prepare("SELECT * FROM suportes 
+                                  WHERE id = :id
+                                  ");
+
+    $stmt->bindParam(":id", $id);
+
+    $stmt->execute();
+
+    if ($stmt->rowCount() > 0) {
+
+      $suportesArray = $stmt->fetchAll();
+
+      foreach ($suportesArray as $suporte) {
+        $suportes[] = $this->buildSuporte($suporte);
+      }
+    }
+
+    return $suportes;
   }
 
  

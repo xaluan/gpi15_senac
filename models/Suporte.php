@@ -12,9 +12,9 @@ class Suporte {
 interface SuporteDAOInterface {
 
     public function buildSuporte($data);
-    public function findAll();    
+    public function findAll();
+    public function findById($id);    
     public function create(Suporte $suporte);      
-        
-    
+           
    
 }
