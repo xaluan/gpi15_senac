@@ -23,4 +23,4 @@ git clone https://github.com/DellSilva/gpi15_senac.git
 
 -> Fernando Guimarães Crescenti
 
--> André Luiz da Silva Xavier
+-> Andre Luiz da Silva Xavier
