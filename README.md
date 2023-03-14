@@ -22,3 +22,5 @@ git clone https://github.com/DellSilva/gpi15_senac.git
 -> Bruno De Jesus Santana Sousa
 
 -> Fernando Guimarães Crescenti
+
+-> André Luiz da Silva Xavier
